@@ -1,0 +1,19 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 85vw;
+    height: 95vh;
+    border: 1px solid red;
+    position: fixed;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    height: 7vh;
+    width: 85vw;
+    border: 1px solid black;
+}
