@@ -1,6 +1,15 @@
-ideas
+__ideas
 
-for navigation:
-  > circular buttons
-  > on hover :: full opacity
-  > off hover :: maybe 50% opacity
+__for navigation:
+    _place nav in header? maybe
+    _circular buttons w/ cute little icons
+      - 'Home'
+      - 'About'
+      - 'Education'
+      - 'Work History'
+      - 'Projects'
+    _on header hover  :: full opacity
+    _off header hover :: maybe 50% opacity
+
+__for landing page(home):
+    _keep it simple
