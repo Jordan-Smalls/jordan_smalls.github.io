@@ -1,6 +1,7 @@
 html {
     display: flex;
     justify-content: center;
+	background-color: #e8e8e8;
 }
 
 body {
@@ -15,5 +16,57 @@ header {
     top: 0;
     height: 7vh;
     width: 85vw;
-    border: 1px solid black;
 }
+
+#main_nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main_nav_btns {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 60px;
+	background-color: #999999;
+	border: 2px outset #696969;
+	border-radius: 25px;
+	margin: 5px;
+}
+
+.main_nav_btns_clicked {
+	height: 60px;
+	width: 60px;
+	background-color: grey;
+	border: 2px inset #696969;
+	border-radius: 25px;
+	margin: 5px;
+}
+
+.icons {
+	height: 60%;
+	width: 60%;
+}
+
+#about_icon {
+	height: 45%;
+}
+
+#edu_icon {
+	height: 45%;
+}
+
+#work_hist_icon {
+	transform: translate(0px, -1px);
+}
+
+#content_area {
+	position: absolute;
+	top: 10%;
+	border: 1px solid black;
+	height: 90%;
+	width: 100%;
+}
+

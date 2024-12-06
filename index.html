@@ -4,12 +4,57 @@
   
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script> 
+	<script type="text/javascript" src="sections.js"></script> 
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   
   <body>
-    <header></header>      
-    
+   	<header>
+		<nav id="main_nav">
+			<button class="main_nav_btns" id="home_btn">
+				<img src="img/home.svg" class="icons" id="home_icon">
+			</button>
+			<button class="main_nav_btns" id="about_btn">
+				<img src="img/person.svg" class="icons" id="about_icon">
+			</button>
+			<button class="main_nav_btns" id="edu_btn">
+				<img src="img/edu.svg" class="icons" id="edu_icon">
+			</button>
+			<button class="main_nav_btns" id="work_hist_btn">
+				<img src="img/work.svg" class="icons" id="work_hist_icon">
+			</button>
+			<button class="main_nav_btns" id="projects_btn">
+				<img src="img/projects.svg" class="icons" id="projects_icon">
+			</button>
+		</nav>
+   	</header>  
+	
+	<div id="content_area">
+
+		<div class="sections" id="home_section">
+			<h1 style="text-align:center;"> LANDING </h1>
+		</div> 
+
+		<div class="sections" id="about_section">
+			<h1 style="text-align:center;"> ABOUT ME </h1>
+		</div> 
+
+		<div class="sections" id="edu_section">
+			<h1 style="text-align:center;"> EDUCATION </h1>
+		</div> 
+
+		<div class="sections" id="work_section">
+			<h1 style="text-align:center;"> WORK HISTORY </h1>
+		</div> 
+
+		<div class="sections" id="proj_section">
+			<h1 style="text-align:center;"> PROJECTS </h1>
+		</div> 
+
+	</div>
+
     <footer></footer>
   </body>
   
