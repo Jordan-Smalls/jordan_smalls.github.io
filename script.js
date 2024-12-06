@@ -2,7 +2,7 @@ $(document).ready(function() {
 	const home_btn 		= $('#home_btn');
 	const about_btn 	= $('#about_btn');
 	const edu_btn 		= $('#edu_btn');
-	const work_hist_btn 	= $('#work_hist_btn');
+	const work_hist_btn = $('#work_hist_btn');
 	const projects_btn 	= $('#projects_btn');
 
 	const home_icon		= $('#home_icon');
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	const projects_icon	= $('#projects_icon');
 
 	const home_section	= $('#home_section');
-	const about_section 	= $('#about_section');
+	const about_section = $('#about_section');
 	const edu_section 	= $('#edu_section');
 	const work_section 	= $('#work_section');
 	const proj_section	= $('#proj_section');
