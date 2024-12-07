@@ -1,4 +1,5 @@
 html {
+	font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
 	background-color: #e8e8e8;
@@ -27,8 +28,9 @@ header {
 }
 
 .main_nav_btns {
+	box-shadow: 0px 5px 7px grey;
 	transition: .2s;
-	display: flex;
+	display: flex;	
 	justify-content: center;
 	align-items: center;
 	height: 47px;
@@ -76,10 +78,51 @@ header {
 }
 
 #content_area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	top: 10%;
 	/*border: 1px solid black;*/
 	height: 90%;
 	width: 100%;
 }
+
+#home_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	width: 600px;
+}
+
+@media screen and (min-width: 501px) {
+	#portrait {
+		box-shadow: 0px 10px 10px grey;
+		border-radius: 200px;
+		width: 55%;
+	}
+	#home_name {
+		font-size: 34px;
+	}
+	#home_short_desc {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#portrait {
+		box-shadow: 0px 10px 10px grey;
+		border-radius: 200px;
+		width: 85%;
+	}
+	#home_name {
+		font-size: 32px;
+	}
+	#home_short_desc {
+		font-size: 14px;
+	}
+}
+
 

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	const body			= $('body');
 	const home_btn 		= $('#home_btn');
 	const about_btn 	= $('#about_btn');
 	const edu_btn 		= $('#edu_btn');
@@ -17,6 +19,8 @@ $(document).ready(function() {
 	const work_section 	= $('#work_section');
 	const proj_section	= $('#proj_section');
 
+	body.hide();
+	body.fadeIn(400);
 	hideSections();
 	home_btn.addClass("main_nav_btns_clicked");
 	home_icon.attr('src', 'img/home_activated.svg');
@@ -27,7 +31,7 @@ $(document).ready(function() {
 		hideSections();
 		home_btn.addClass("main_nav_btns_clicked");
 		home_icon.attr('src', 'img/home_activated.svg');
-		home_section.show();
+		home_section.fadeIn(200);
 	});
 
 	about_btn.click(function() {
@@ -35,7 +39,7 @@ $(document).ready(function() {
 		hideSections();
 		about_btn.addClass("main_nav_btns_clicked");
 		about_icon.attr('src', 'img/person_activated.svg');
-		about_section.show();
+		about_section.fadeIn(200);
 	});
 
 	edu_btn.click(function() {
@@ -43,7 +47,7 @@ $(document).ready(function() {
 		hideSections();
 		edu_btn.addClass("main_nav_btns_clicked");
 		edu_icon.attr('src', 'img/edu_activated.svg');
-		edu_section.show();
+		edu_section.fadeIn(200);
 	});
 
 	work_hist_btn.click(function() {
@@ -51,7 +55,7 @@ $(document).ready(function() {
 		hideSections();
 		work_hist_btn.addClass("main_nav_btns_clicked");
 		work_hist_icon.attr('src', 'img/work_activated.svg');
-		work_section.show();
+		work_section.fadeIn(200);
 	});
 
 	projects_btn.click(function() {
@@ -59,7 +63,7 @@ $(document).ready(function() {
 		hideSections();
 		projects_btn.addClass("main_nav_btns_clicked");
 		projects_icon.attr('src', 'img/projects_activated.svg');
-		proj_section.show();
+		proj_section.fadeIn(200);
 	});
 
 	function clearButtons() {
