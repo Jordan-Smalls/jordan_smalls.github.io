@@ -33,30 +33,30 @@ header {
 	display: flex;	
 	justify-content: center;
 	align-items: center;
-	height: 47px;
-	width: 47px;
-	background-color: #d9d9d9;
+	height: 55px;
+	width: 55px;
+	background-color: #c0c0c0;
 	border: 0;
-	border-radius: 10px;
+	border-radius: 50px;
 	margin: 5px;
 }
 
 @media (hover) {
 	.main_nav_btns:hover {
 		transition: .2s;
-		height: 60px;
-		width: 60px;
-		background-color: #c0c0c0;
+		height: 65px;
+		width: 65px;
+		background-color: #d9d9d9;
 	}
 }
 
 .main_nav_btns_clicked {
 	pointer-events: none;
-	height: 60px;
-	width: 60px;
+	height: 65px;
+	width: 65px;
 	border: 0;
 	background-color: rgb(255, 60, 60);
-	border-radius: 10px;
+	border-radius: 50px;
 	margin: 5px;
 }
 
