@@ -6,10 +6,10 @@ html {
 }
 
 body {
-    width: 85vw;
+    width: 100vw;
     height: 95vh;
     /*border: 1px solid red;*/
-    position: fixed;
+	overflow-x: hidden;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
     position: absolute;
     top: 0;
     height: 7vh;
-    width: 85vw;
+    width: 100vw;
 }
 
 #main_nav {
@@ -119,8 +119,8 @@ header {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 18%;
-	height: 90%;
+	top: 10%;
+	height: 100%;
 	width: 100%;
 }
 
