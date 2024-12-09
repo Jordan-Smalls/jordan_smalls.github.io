@@ -149,7 +149,6 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid black;
   	text-shadow: 0px 5px 5px #C0C0C0;
 	font-size: 60px;
 	font-weight: lighter;
