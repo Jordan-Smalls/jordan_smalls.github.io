@@ -101,13 +101,25 @@ header {
 	transform: translate(0px, -1px);
 }
 
+#view_body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#header_area {
+	position: absolute;
+	top: 10%;
+	height: 90%;
+	width: 100%;
+}
+
 #content_area {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 10%;
-	/*border: 1px solid black;*/
+	top: 18%;
 	height: 90%;
 	width: 100%;
 }
@@ -134,11 +146,9 @@ header {
 }
 
 .headers {
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
- 	width: 75%;
 	border: 1px solid black;
   	text-shadow: 0px 5px 5px #C0C0C0;
 	font-size: 60px;
