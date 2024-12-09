@@ -13,6 +13,12 @@ $(document).ready(function() {
 	const work_hist_icon	= $('#work_hist_icon');
 	const projects_icon	= $('#projects_icon');
 
+	const headers		= $('.headers');
+	const about_header	= $('#about_header');
+	const edu_header	= $('#edu_header');
+	const work_header 	= $('#work_header');
+	const proj_header	= $('#proj_header');
+
 	const home_section	= $('#home_section');
 	const about_section = $('#about_section');
 	const edu_section 	= $('#edu_section');
@@ -39,6 +45,7 @@ $(document).ready(function() {
 		hideSections();
 		about_btn.addClass("main_nav_btns_clicked");
 		about_icon.attr('src', 'img/person_activated.svg');
+		about_header.fadeIn(200);
 		about_section.fadeIn(200);
 	});
 
@@ -47,6 +54,7 @@ $(document).ready(function() {
 		hideSections();
 		edu_btn.addClass("main_nav_btns_clicked");
 		edu_icon.attr('src', 'img/edu_activated.svg');
+		edu_header.fadeIn(200);
 		edu_section.fadeIn(200);
 	});
 
@@ -55,6 +63,7 @@ $(document).ready(function() {
 		hideSections();
 		work_hist_btn.addClass("main_nav_btns_clicked");
 		work_hist_icon.attr('src', 'img/work_activated.svg');
+		work_header.fadeIn(200);
 		work_section.fadeIn(200);
 	});
 
@@ -63,6 +72,7 @@ $(document).ready(function() {
 		hideSections();
 		projects_btn.addClass("main_nav_btns_clicked");
 		projects_icon.attr('src', 'img/projects_activated.svg');
+		proj_header.fadeIn(200);
 		proj_section.fadeIn(200);
 	});
 
@@ -84,6 +94,7 @@ $(document).ready(function() {
 	}
 
 	function hideSections() {
+		headers.hide();
 		home_section.hide();
 		about_section.hide();
 		edu_section.hide();

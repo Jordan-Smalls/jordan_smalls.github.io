@@ -63,18 +63,22 @@ header {
 #home_btn {
 	animation: fadeInHigher .3s ease-out both;
 }
+
 #about_btn {
 	animation: fadeInHigher .3s ease-out both;
 	animation-delay: .1s;
 }
+
 #edu_btn {
 	animation: fadeInHigher .3s ease-out both;
 	animation-delay: .2s;
 }
+
 #work_hist_btn {
 	animation: fadeInHigher .3s ease-out both;
 	animation-delay: .3s;
 }
+
 #projects_btn {
 	animation: fadeInHigher .3s ease-out both;
 	animation-delay: .4s;
@@ -130,11 +134,15 @@ header {
 }
 
 .headers {
-  	text-shadow: 0px 5px 5px #C0C0C0;
-	font-size: 70px;
-	font-weight: lighter;
 	position: absolute;
-	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ 	width: 75%;
+	border: 1px solid black;
+  	text-shadow: 0px 5px 5px #C0C0C0;
+	font-size: 60px;
+	font-weight: lighter;
 	animation: fadeIn .3s ease-out both;
 }
 
