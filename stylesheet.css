@@ -28,14 +28,14 @@ header {
 }
 
 .main_nav_btns {
-	box-shadow: 0px 5px 7px grey;
+	box-shadow: 0px 5px 7px #C0C0C0;
 	transition: .2s;
 	display: flex;	
 	justify-content: center;
 	align-items: center;
 	height: 55px;
 	width: 55px;
-	background-color: #c0c0c0;
+	background-color: #D3D3D3;
 	border: 0;
 	border-radius: 50px;
 	margin: 5px;
@@ -46,7 +46,7 @@ header {
 		transition: .2s;
 		height: 65px;
 		width: 65px;
-		background-color: #d9d9d9;
+		background-color: #DCDCDC;
 	}
 }
 
@@ -58,6 +58,26 @@ header {
 	background-color: rgb(255, 60, 60);
 	border-radius: 50px;
 	margin: 5px;
+}
+
+#home_btn {
+	animation: fadeInHigher .3s ease-out both;
+}
+#about_btn {
+	animation: fadeInHigher .3s ease-out both;
+	animation-delay: .1s;
+}
+#edu_btn {
+	animation: fadeInHigher .3s ease-out both;
+	animation-delay: .2s;
+}
+#work_hist_btn {
+	animation: fadeInHigher .3s ease-out both;
+	animation-delay: .3s;
+}
+#projects_btn {
+	animation: fadeInHigher .3s ease-out both;
+	animation-delay: .4s;
 }
 
 .icons {
@@ -90,39 +110,123 @@ header {
 
 #home_section {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
 	height: 500px;
-	width: 600px;
+	width: 800px;
+}
+
+.sections {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	width: 1000px;
+}
+
+.headers {
+  	text-shadow: 0px 5px 5px #C0C0C0;
+	font-size: 70px;
+	font-weight: lighter;
+	position: absolute;
+	top: 0;
+	animation: fadeIn .3s ease-out both;
 }
 
 @media screen and (min-width: 501px) {
 	#portrait {
-		box-shadow: 0px 10px 10px grey;
-		border-radius: 200px;
-		width: 55%;
+		box-shadow: 0px 10px 10px #C0C0C0;
+		border: 1px solid black;
+		border-radius: 20px;
+		width: 100%;
+		margin-right: 30px;
 	}
 	#home_name {
-		font-size: 34px;
+		transform: translate(0px, -15px);
+  		text-shadow: 0px 5px 7px #C0C0C0;
+		text-align: right;
+		font-size: 60px;
+		font-weight: lighter;
+		animation: fadeInLeft .3s ease-out both;
 	}
 	#home_short_desc {
-		font-size: 16px;
+		transform: translate(0px, -20px);
+		font-size: 22px;
+		text-align: right;
+		font-weight: lighter;
+		animation: fadeInLeft .3s ease-out both;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	#portrait {
-		box-shadow: 0px 10px 10px grey;
-		border-radius: 200px;
-		width: 85%;
+		box-shadow: 0px 10px 10px #C0C0C0;
+		border: 1px solid black;
+		border-radius: 20px;
+		width: 100%;
+		margin-right: 0px;
 	}
 	#home_name {
-		font-size: 32px;
+		text-shadow: 0px 5px 7px #C0C0C0;
+		font-size: 54px;
+		text-align: center;
+		font-weight: lighter;
+		animation: fadeInBottom .3s ease-out both;
 	}
 	#home_short_desc {
-		font-size: 14px;
+		display: none;
+		animation: fadeInBottom .3s ease-out both;
+	}
+	#home_section {
+		flex-wrap: wrap;
 	}
 }
 
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
 
+@keyframes fadeInHigher {
+   0% {
+      opacity: 0;
+      transform: translateY(-50px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+
+@keyframes fadeInBottom {
+   0% {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+} 
+
+@keyframes fadeInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
