@@ -38,31 +38,33 @@ footer {
 	display: flex;	
 	justify-content: center;
 	align-items: center;
-	height: 55px;
-	width: 55px;
+	height: 60px;
+	width: 60px;
 	background-color: #D3D3D3;
 	border: 0;
 	border-radius: 50px;
-	margin: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 @media (hover) {
 	.main_nav_btns:hover {
 		transition: .2s;
-		height: 65px;
-		width: 65px;
+		height: 70px;
+		width: 70px;
 		background-color: #DCDCDC;
 	}
 }
 
 .main_nav_btns_clicked {
 	pointer-events: none;
-	height: 65px;
-	width: 65px;
+	height: 70px;
+	width: 70px;
 	border: 0;
 	background-color: rgb(255, 60, 60);
 	border-radius: 50px;
-	margin: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #home_btn {
@@ -107,7 +109,9 @@ footer {
 }
 
 #view_body {
+	margin-top: 20px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
@@ -115,21 +119,22 @@ footer {
 }
 
 #header_area {
+	border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	top: 13%;
+	top: 15%;
 	height: 10%;
 	width: 98%;
 }
 
 #content_area {
+	border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	width: 100%;
+	width: 98%;
 }
 
 #home_section {
@@ -157,7 +162,7 @@ footer {
 	justify-content: center;
 	align-items: center;
   	text-shadow: 0px 5px 5px #C0C0C0;
-	font-size: 60px;
+	font-size: 70px;
 	font-weight: lighter;
 	animation: fadeIn .3s ease-out both;
 }
@@ -197,7 +202,7 @@ footer {
 	}
 	#home_name {
 		text-shadow: 0px 5px 7px #C0C0C0;
-		font-size: 54px;
+		font-size: 60px;
 		text-align: center;
 		font-weight: lighter;
 		animation: fadeInBottom .3s ease-out both;
