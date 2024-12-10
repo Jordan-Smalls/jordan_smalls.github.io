@@ -3,22 +3,27 @@ html {
     display: flex;
     justify-content: center;
 	background-color: #e8e8e8;
+	overflow-x: hidden;
+    height: auto;
+    width: auto;
 }
 
 body {
-    width: 100vw;
-    height: 95vh;
-    /*border: 1px solid red;*/
-	overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
 }
 
 header {
 	padding-top: 15px;
 	padding-bottom: 15px;
-    position: absolute;
     top: 0;
     height: 7vh;
-    width: 100vw;
+    width: 100%;
+}
+
+footer {
+    height: 7vh;
+    width: 100%;
 }
 
 #main_nav {
@@ -105,21 +110,24 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
+	width: 100%;
 }
 
 #header_area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
-	top: 10%;
-	height: 90%;
-	width: 100%;
+	top: 13%;
+	height: 10%;
+	width: 98%;
 }
 
 #content_area {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	top: 10%;
 	height: 100%;
 	width: 100%;
 }
@@ -135,7 +143,6 @@ header {
 }
 
 .sections {
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
