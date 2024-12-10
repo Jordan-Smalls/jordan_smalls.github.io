@@ -1,8 +1,9 @@
 html {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Red Hat Display", sans-serif;
     display: flex;
     justify-content: center;
-	background-color: #e8e8e8;
+	background: linear-gradient(#f2f2f2, #e2e2e2);
+	background-size: 150% 150%;
 	overflow-x: hidden;
     height: auto;
     width: auto;
@@ -33,14 +34,32 @@ footer {
 }
 
 .main_nav_btns {
-	box-shadow: 0px 5px 7px #C0C0C0;
+	box-shadow: 0px 5px 7px #999999;
 	transition: .2s;
 	display: flex;	
 	justify-content: center;
 	align-items: center;
 	height: 60px;
 	width: 60px;
-	background-color: #D3D3D3;
+	background: radial-gradient(#9e9e9e, #e9e9e9);
+	/*background-color: #dcdcdc;*/
+	border: 0;
+	border-radius: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.main_nav_btns_clicked {
+	transform: translate(0px, 0px);
+	box-shadow: 0px 0px 5px #999999;
+	transition: .2s;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 60px;
+	background: radial-gradient(#9e9e9e, #e9e9e9);
+	/*background-color: #dcdcdc;*/
 	border: 0;
 	border-radius: 50px;
 	margin-left: 10px;
@@ -56,16 +75,7 @@ footer {
 	}
 }
 
-.main_nav_btns_clicked {
-	pointer-events: none;
-	height: 70px;
-	width: 70px;
-	border: 0;
-	background-color: rgb(255, 60, 60);
-	border-radius: 50px;
-	margin-left: 10px;
-	margin-right: 10px;
-}
+
 
 #home_btn {
 	animation: fadeInHigher .3s ease-out both;
@@ -119,7 +129,6 @@ footer {
 }
 
 #header_area {
-	border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -129,7 +138,6 @@ footer {
 }
 
 #content_area {
-	border: 1px solid black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -161,23 +169,22 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  	text-shadow: 0px 5px 5px #C0C0C0;
-	font-size: 70px;
-	font-weight: lighter;
+	font-size: 64px;
+	font-weight: bold;
 	animation: fadeIn .3s ease-out both;
 }
 
 @media screen and (min-width: 501px) {
 	#portrait {
-		box-shadow: 0px 10px 10px #C0C0C0;
-		border: 1px solid black;
-		border-radius: 20px;
-		width: 100%;
+		box-shadow: 0px 10px 10px #999999;
+		border-radius: 200px;
+		width: 50%;
 		margin-right: 30px;
+		animation: fadeInRight .3s ease-out both;
 	}
 	#home_name {
 		transform: translate(0px, -15px);
-  		text-shadow: 0px 5px 7px #C0C0C0;
+  		text-shadow: 0px 5px 7px #999999;
 		text-align: right;
 		font-size: 60px;
 		font-weight: lighter;
@@ -194,21 +201,24 @@ footer {
 
 @media screen and (max-width: 500px) {
 	#portrait {
-		box-shadow: 0px 10px 10px #C0C0C0;
-		border: 1px solid black;
-		border-radius: 20px;
-		width: 100%;
+		box-shadow: 0px 10px 10px #999999;
+		border-radius: 200px;
+		width: 80%;
 		margin-right: 0px;
+		animation: fadeIn .3s ease-out both;
 	}
 	#home_name {
-		text-shadow: 0px 5px 7px #C0C0C0;
-		font-size: 60px;
+		font-size: 48px;
 		text-align: center;
-		font-weight: lighter;
+		font-weight: bold;
 		animation: fadeInBottom .3s ease-out both;
 	}
 	#home_short_desc {
-		display: none;
+		font-size: 20px;
+		text-align: center;
+		font-weight: normal;
+		width: 90%;
+		margin: auto;
 		animation: fadeInBottom .3s ease-out both;
 	}
 	#home_section {
@@ -252,7 +262,18 @@ footer {
 @keyframes fadeInLeft {
    0% {
       opacity: 0;
-      transform: translateX(20px);
+      transform: translateX(100px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+@keyframes fadeInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(-100px);
    }
    100% {
       opacity: 1;

@@ -13,6 +13,7 @@ $(document).ready(function() {
 	const work_hist_icon	= $('#work_hist_icon');
 	const projects_icon	= $('#projects_icon');
 
+	const header_area	= $('#header_area');
 	const headers		= $('.headers');
 	const about_header	= $('#about_header');
 	const edu_header	= $('#edu_header');
@@ -28,6 +29,7 @@ $(document).ready(function() {
 	body.hide();
 	body.fadeIn(400);
 	hideSections();
+	header_area.hide();
 	home_btn.addClass("main_nav_btns_clicked");
 	home_icon.attr('src', 'img/home_activated.svg');
 	home_section.show();
@@ -35,6 +37,7 @@ $(document).ready(function() {
 	home_btn.click(function() {
 		clearButtons();
 		hideSections();
+		header_area.hide();
 		home_btn.addClass("main_nav_btns_clicked");
 		home_icon.attr('src', 'img/home_activated.svg');
 		home_section.fadeIn(200);
@@ -45,6 +48,7 @@ $(document).ready(function() {
 		hideSections();
 		about_btn.addClass("main_nav_btns_clicked");
 		about_icon.attr('src', 'img/person_activated.svg');
+		header_area.show();
 		about_header.fadeIn(200);
 		about_section.fadeIn(200);
 	});
@@ -54,6 +58,7 @@ $(document).ready(function() {
 		hideSections();
 		edu_btn.addClass("main_nav_btns_clicked");
 		edu_icon.attr('src', 'img/edu_activated.svg');
+		header_area.show();
 		edu_header.fadeIn(200);
 		edu_section.fadeIn(200);
 	});
@@ -63,6 +68,7 @@ $(document).ready(function() {
 		hideSections();
 		work_hist_btn.addClass("main_nav_btns_clicked");
 		work_hist_icon.attr('src', 'img/work_activated.svg');
+		header_area.show();
 		work_header.fadeIn(200);
 		work_section.fadeIn(200);
 	});
@@ -72,6 +78,7 @@ $(document).ready(function() {
 		hideSections();
 		projects_btn.addClass("main_nav_btns_clicked");
 		projects_icon.attr('src', 'img/projects_activated.svg');
+		header_area.show();
 		proj_header.fadeIn(200);
 		proj_section.fadeIn(200);
 	});
