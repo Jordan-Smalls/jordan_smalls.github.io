@@ -49,7 +49,7 @@ $(document).ready(function() {
 		about_btn.addClass("main_nav_btns_clicked");
 		about_icon.attr('src', 'img/person_activated.svg');
 		header_area.show();
-		about_header.fadeIn(200);
+		setTimeout(about_header.fadeIn(200), 500);
 		about_section.fadeIn(200);
 	});
 
