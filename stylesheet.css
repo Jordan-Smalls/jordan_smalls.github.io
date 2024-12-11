@@ -195,7 +195,7 @@ footer {
 @media screen and (max-width: 500px) {
 	header {
 		position: fixed;
-		top: 90vh;
+		top: 0;
 		height: 7vh;
 		width: 100%;
 		z-index: 1;
