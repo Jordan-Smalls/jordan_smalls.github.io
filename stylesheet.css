@@ -3,8 +3,8 @@ html {
     display: flex;
     justify-content: center;
 	align-items: center;
-	background: linear-gradient(#f2f2f2, #e2e2e2);
-	background-size: 150% 150%;
+	background: linear-gradient(#f2f2f2, #d9d9d9);
+	background-size: 300% 300%;
 	overflow-x: hidden;
 	overflow-y: auto;
     height: auto;
@@ -24,13 +24,19 @@ header {
 	position: fixed;
     top: 0;
     height: 7vh;
-    width: 60%;
+    width: 50%;
 	z-index: 1;
 }
 
 footer {
-    height: 7vh;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+    top: 100%;
+	font-size: 14px;
+    height: 3vh;
+    width: 90%;
 }
 
 #main_nav {
@@ -51,7 +57,7 @@ footer {
 
 .main_nav_btns_clicked {
 	pointer-events: none;
-	transition: .2s;
+	transition: .1s;
 	display: flex;	
 	justify-content: center;
 	align-items: center;
@@ -66,7 +72,7 @@ footer {
 		transition: .2s;
 		height: 45px;
 		width: 100%;
-		background-color: #c9c9c9;
+		background-color: #e4e4e4;
 	}
 }
 
@@ -99,14 +105,6 @@ footer {
 	width: 60%;
 }
 
-#about_icon {
-	height: 45%;
-}
-
-#edu_icon {
-	height: 45%;
-}
-
 #work_hist_icon {
 	transform: translate(0px, -1px);
 }
@@ -118,14 +116,15 @@ footer {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	width: 60%;
+	width: 100%;
 }
 
 #header_area {
+	transform: translate(0px, 20px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 15%;
+	top: 20%;
 	height: 10%;
 	width: 98%;
 }
@@ -148,38 +147,52 @@ footer {
 	width: 800px;
 }
 
-.sections {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	height: 500px;
-	width: 1000px;
-}
-
 .headers {
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 64px;
+	font-size: 100px;
 	font-weight: bold;
 	animation: fadeIn .3s ease-out both;
 }
 
+.sub_headers {
+	font-size: 28px;
+	text-align: left;
+}
+
+.sections {
+	display: flex;
+	text-align: left;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: left;
+	height: 500px;
+	width: 50%;
+}
+
+.content {
+	font-size: 24px;
+}
+
 @media screen and (min-width: 501px) {
+	#mobile_view {
+		display: none;
+	}
 	#portrait {
 		box-shadow: 0px 10px 10px #999999;
 		border-radius: 200px;
 		width: 45%;
-		margin-right: 30px;
+		margin-right: 40px;
+		rotate: 10deg;
 		animation: fadeInRight .3s ease-out both;
 	}
 	#home_name {
 		transform: translate(0px, -15px);
   		text-shadow: 0px 5px 7px #999999;
 		text-align: right;
-		font-size: 54px;
+		font-size: 60px;
 		font-weight: bold;
 		animation: fadeInLeft .3s ease-out both;
 	}
@@ -189,6 +202,9 @@ footer {
 		text-align: right;
 		font-weight: normal;
 		animation: fadeInLeft .3s ease-out both;
+	}
+	#home_section {
+		transform: translate(0px, 150px);
 	}
 }
 
@@ -200,12 +216,35 @@ footer {
 		width: 100%;
 		z-index: 1;
 	}
+	.headers {
+		width: 90%;
+		border-bottom: 2px solid black;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 64px;
+		font-weight: bold;
+		animation: fadeIn .3s ease-out both;
+	}
+	.sections {
+		display: flex;
+		text-align: left;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: left;
+		height: 500px;
+		width: 90%;
+	}
+	#full_view {
+		display: none;
+	}
 	#portrait {
 		box-shadow: 0px 10px 10px #999999;
 		border-radius: 200px;
 		width: 80%;
 		margin-right: 0px;
 		margin-top: 30px;
+		rotate: 10deg;
 		animation: fadeIn .3s ease-out both;
 	}
 	#home_name {
@@ -223,6 +262,7 @@ footer {
 		animation: fadeInBottom .3s ease-out both;
 	}
 	#home_section {
+		transform: translate(0px, 100px);
 		flex-wrap: wrap;
 	}
 }
