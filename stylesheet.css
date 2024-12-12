@@ -7,15 +7,15 @@ html {
 	background-size: 300% 300%;
 	overflow-x: hidden;
 	overflow-y: auto;
-    height: auto;
+   	min-height: 100vh;
     width: auto;
 }
 
 body {
-	border: 1px solid black;
+	position: relative;
 	display: flex;
 	flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 	align-items: center;
 	min-height: 100vh;
     width: 100%;
@@ -30,12 +30,11 @@ header {
 }
 
 footer {
-	border: 1px solid black;
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
+	position: relative;
     top: 100%;
 	font-size: 14px;
     height: 7vh;
@@ -235,7 +234,6 @@ footer {
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: left;
-		height: 500px;
 		width: 90%;
 	}
 	#full_view {
@@ -246,7 +244,6 @@ footer {
 		border-radius: 200px;
 		width: 80%;
 		margin-right: 0px;
-		margin-top: 30px;
 		rotate: 10deg;
 		animation: fadeIn .3s ease-out both;
 	}
@@ -265,8 +262,10 @@ footer {
 		animation: fadeInBottom .3s ease-out both;
 	}
 	#home_section {
-		transform: translate(0px, 100px);
 		flex-wrap: wrap;
+		align-items: center;
+		margin-top: 18vh;
+		width: 98vw;
 	}
 }
 
