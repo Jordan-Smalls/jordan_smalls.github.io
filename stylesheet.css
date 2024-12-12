@@ -168,7 +168,8 @@ footer {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	align-items: left;
-	height: 500px;
+	margin-bottom: 50px;
+	height: auto;
 	width: 50%;
 }
 
