@@ -37,7 +37,7 @@ footer {
 	position: relative;
     top: 100%;
 	font-size: 14px;
-    height: 7vh;
+    height: 6vh;
     width: 90%;
 }
 
@@ -139,6 +139,19 @@ footer {
 	width: 98%;
 }
 
+.socials_btns {
+	border-radius: 100px;
+	height: 40px;
+	width: 40px;	
+	margin-right: 5px;
+}
+
+#github_logo {
+	width: 44px;
+	height: 44px;
+	transform: translate(0px, 2px);
+}
+
 #home_section {
 	display: flex;
 	flex-direction: row;
@@ -223,7 +236,7 @@ footer {
 		animation: fadeInLeft .3s ease-out both;
 	}
 	#home_section {
-		transform: translate(0px, 50%);
+		transform: translate(0px, 75%);
 		width: 50%;
 	}
 }
@@ -235,6 +248,13 @@ footer {
 		height: 7vh;
 		width: 100%;
 		z-index: 1;
+	}
+	footer {
+		flex-direction: column;
+	}
+	.socials_btns {
+		margin-right: 5px;
+		margin-bottom: 5px;
 	}
 	.headers {
 		width: 90%;
