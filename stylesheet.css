@@ -147,6 +147,26 @@ footer {
 	align-items: center;
 }
 
+#tech_practices h1 {
+	font-size: 48px;
+	text-align: left;
+}
+
+.courses_left {
+	font-size: 24px;
+	text-align: left;
+}
+
+#tech_practices h2 {
+	font-size: 48px;
+	text-align: right;
+}
+
+.courses_right {
+	font-size: 24px;
+	text-align: right;
+}
+
 .headers {
 	width: 50%;
 	display: flex;
@@ -158,8 +178,8 @@ footer {
 }
 
 .sub_headers {
-	font-size: 28px;
-	text-align: left;
+	font-size: 48px;
+	text-align: center;
 }
 
 .sections {
@@ -190,7 +210,6 @@ footer {
 	}
 	#home_name {
 		transform: translate(0px, -15px);
-  		text-shadow: 0px 5px 7px #999999;
 		text-align: right;
 		font-size: 60px;
 		font-weight: bold;
@@ -227,6 +246,10 @@ footer {
 		font-weight: bold;
 		animation: fadeIn .3s ease-out both;
 	}
+	.sub_headers {
+		font-size: 36px;
+		text-align: center;
+	}
 	.sections {
 		display: flex;
 		text-align: left;
@@ -237,6 +260,9 @@ footer {
 	}
 	#full_view {
 		display: none;
+	}
+	#mobile_view {
+		text-align: center;
 	}
 	#portrait {
 		box-shadow: 0px 10px 10px #999999;
@@ -265,6 +291,22 @@ footer {
 		align-items: center;
 		margin-top: 18vh;
 		width: 98vw;
+	}
+	#tech_practices h1 {
+		font-size: 36px;
+		text-align: left;
+	}
+	.courses_left {
+		font-size: 20px;
+		text-align: left;
+	}
+	#tech_practices h2 {
+		font-size: 36px;
+		text-align: right;
+	}
+	.courses_right {
+		font-size: 20px;
+		text-align: right;
 	}
 }
 
