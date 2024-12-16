@@ -9,7 +9,10 @@
 	<script type="text/javascript" src="sections.js"></script> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Permanent+Marker&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
   </head>
   
@@ -48,10 +51,8 @@
 
 			<div id="home_section">
 				<img id="portrait" src="img/portrait.jpeg">
-				<div>
-					<h1 id="home_name">Jordan Smalls</h1>
-					<h2 id="home_short_desc">Programmer and creative with a passion in turning ideas into reality.</h2><br>
-				</div>
+				<h1 id="home_name">Hello! I'm <span id="name">Jordan</span>.</h1>
+				<h2 id="home_short_desc">I'm a programmer and creative with a passion in turning ideas into reality.</h2>
 			</div> 
 
 			<div class="sections" id="about_section">
@@ -83,26 +84,41 @@
 				</div>
 
 				<div id="tech_practices">
-					<h1> I Explored Java Programming </h1>
-						<p class="courses_left"><strong> CPT 167: </strong>Intro to Programming</p>
-						<p class="courses_left"><strong> CPT 187: </strong>Object Oriented Programming</p>
-						<p class="courses_left"><strong> CPT 237: </strong>Advanced Java</p>
-					<h2> Web Development </h2>
-						<p class="courses_right"><strong> CPT 162: </strong>Intro to Webpage Design</p>
-						<p class="courses_right"><strong> IST 235: </strong>Handheld Computer Programming</p>
-						<p class="courses_right"><strong> IST 239: </strong>Datum & JavaScript</p>
-						<p class="courses_right"><strong> CPT 275: </strong>Senior Project</p>
-					<h1> Database Management </h1>
-						<p class="courses_left"><strong> CPT 202: </strong>SQL Programming</p>
-						<p class="courses_left"><strong> CPT 242: </strong>Database Fundamentals</p>
-						<p class="courses_left"><strong> IST 274: </strong>Database Administration</p>
-					<h2> and More! </h2>
-						<p class="courses_right"><strong> IST 190: </strong>Linux Essentials</p>
-						<p class="courses_right"><strong> IST 166: </strong>Network Fundamentals</p>
-						<p class="courses_right"><strong> CPT 238: </strong>Internet Scripting</p>
-						<p class="courses_right"><strong> CPT 209: </strong>Computer Systems</p>
+					<div class="blocks" id="java_block">
+						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+							<h1 class="block_headers"> Java Programming </h1>
+							<tr>  <td class="course_id">CPT 167:</td>  <td class="course_title">Intro to Programming</td>  </tr>
+							<tr>  <td class="course_id">CPT 187:</td>  <td class="course_title">Object Oriented Programming</td>  </tr>
+							<tr>  <td class="course_id">CPT 237:</td>  <td class="course_title">Advanced Java</td>  </tr>
+						</table>
+					</div>
+					<div class="blocks" id="webdev_block">
+						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+							<h1 class="block_headers"> Web Development </h1>
+							<tr>  <td class="course_id">CPT 162:</td>  <td class="course_title">Intro to Webpage Design</td>  </tr>
+							<tr>  <td class="course_id">IST 235:</td>  <td class="course_title">Handheld Computer Programming</td>  </tr>
+							<tr>  <td class="course_id">IST 239:</td>  <td class="course_title">Datum & JavaScript</td>  </tr>
+							<tr>  <td class="course_id">CPT 275:</td>  <td class="course_title">Senior Project</td>  </tr>
+						</table>
+					</div>
+					<div class="blocks" id="database_block">
+						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+							<h1 class="block_headers">Database Management</h1>
+							<tr>  <td class="course_id">CPT 202:</td>  <td class="course_title">SQL Programming</td>  </tr>
+							<tr>  <td class="course_id">CPT 242:</td>  <td class="course_title">Database Fundamentals</td>  </tr>
+							<tr>  <td class="course_id">IST 274:</td>  <td class="course_title">Database Administration</td>  </tr>
+						</table>
+					</div>
+					<div class="blocks" id="extra_block">
+						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+							<h1 class="block_headers">and More!</h1>
+							<tr>  <td class="course_id">IST 190:</td>  <td class="course_title">Linux Essentials</td>  </tr>
+							<tr>  <td class="course_id">IST 166:</td>  <td class="course_title">Network Fundamentals</td>  </tr>
+							<tr>  <td class="course_id">CPT 238:</td>  <td class="course_title">Internet Scripting</td>  </tr>
+							<tr>  <td class="course_id">CPT 209:</td>  <td class="course_title">Computer Systems</td>  </tr>
+						</table>
+					</div>
 				</div>
-
 			</div> 
 
 			<div class="sections" id="work_section">
