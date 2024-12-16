@@ -179,6 +179,8 @@ footer {
 }
 
 .blocks {
+	background: linear-gradient(rgb(255, 60, 60), rgb(159, 37, 37));
+	color: white;
 	margin-bottom: 50px;
 	width: 65%;
 	padding: 25px;
@@ -271,6 +273,10 @@ footer {
 	.sections {
 		animation: fadeIn .3s ease-out both;
 		animation-delay: .1s;
+	}
+	#tech_practices {
+		animation: fadeIn .3s ease-out both;
+		animation-delay: .2s;
 	}
 }
 
