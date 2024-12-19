@@ -125,16 +125,6 @@ footer {
 	width: 100%;
 }
 
-#header_area {
-	transform: translate(0px, 20px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 20%;
-	height: 10%;
-	width: 98%;
-}
-
 #content_area {
 	display: flex;
 	justify-content: center;
@@ -174,7 +164,7 @@ footer {
 }
 
 #tech_practices {
-	margin-top: 50px;
+	margin-top: 40px;
 	display: flex;
 	flex-direction: column;
 }
@@ -183,7 +173,7 @@ footer {
 	background: linear-gradient(rgb(255, 60, 60), rgb(159, 37, 37));
 	color: white;
 	margin-bottom: 50px;
-	width: 70%;
+	width: 55%;
 	padding: 25px;
 	border-radius: 20px;
 	box-shadow: 0px 5px 7px #999999;
@@ -213,18 +203,23 @@ footer {
 }
 
 .headers {
-	width: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 100px;
+	width: 100%;
+	font-size: 110px;
 	font-weight: bold;
+	padding: 0;
+	margin-top: 60px;
+	margin-bottom: 0;
 	animation: fadeIn .3s ease-out both;
 }
 
 .sub_headers {
 	font-size: 40px;
-	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0;
+	text-align: left;
+	animation: fadeIn .3s ease-out both;
+	animation-delay: .1s;
 }
 
 .sections {
@@ -234,7 +229,7 @@ footer {
 	flex-wrap: nowrap;
 	align-items: left;
 	height: auto;
-	width: 50%;
+	width: 60%;
 }
 
 .content {
@@ -242,7 +237,15 @@ footer {
 }
 
 @media screen and (min-width: 501px) {
+	#full_view {
+		padding: 0;
+		animation: fadeIn .3s ease-out both;
+		animation-delay: .2s;
+	}
 	#mobile_view {
+		display: none;
+	}
+	#mobile_header {
 		display: none;
 	}
 	#portrait {
@@ -277,11 +280,19 @@ footer {
 	}
 	#tech_practices {
 		animation: fadeIn .3s ease-out both;
-		animation-delay: .2s;
+		animation-delay: .3s;
 	}
 }
 
 @media screen and (max-width: 500px) {
+	#full_view {
+		display: none;
+	}
+	#mobile_view {
+		text-align: left;
+		animation: fadeIn .3s ease-out both;
+		animation-delay: .2s;
+	}
 	header {
 		position: fixed;
 		top: 0;
@@ -297,32 +308,24 @@ footer {
 		margin-bottom: 5px;
 	}
 	.headers {
-		width: 90%;
 		border-bottom: 2px solid black;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 64px;
-		font-weight: bold;
+		font-size: 60px;
 		animation: fadeIn .3s ease-out both;
 	}
 	.sub_headers {
+		padding-bottom: 0;
 		font-size: 36px;
-		text-align: center;
+		text-align: left;
+	}
+	#full_header {
+		display: none;
 	}
 	.sections {
-		display: flex;
-		text-align: left;
+		display: flex;	
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: left;
 		width: 90%;
-	}
-	#full_view {
-		display: none;
-	}
-	#mobile_view {
-		text-align: center;
 	}
 	#portrait {
 		box-shadow: 0px 10px 10px #999999;
@@ -350,21 +353,34 @@ footer {
 		margin-top: 18vh;
 		width: 98vw;
 	}
-	#tech_practices h1 {
-		font-size: 36px;
-		text-align: left;
+	#tech_practices {
+		animation: fadeIn .3s ease-out both;
+		animation-delay: .3s;
 	}
-	.courses_left {
-		font-size: 20px;
-		text-align: left;
+	.blocks {
+		width: 72vw;
 	}
-	#tech_practices h2 {
-		font-size: 36px;
+
+	#webdev_block, #extra_block {
+		margin-left: auto;
+	}
+	.block_headers {
+		text-align: center;
+		font-size: 28px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.course_id {
+		width: 25%;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.course_title {
+		width: 75%;
 		text-align: right;
-	}
-	.courses_right {
-		font-size: 20px;
-		text-align: right;
+		font-size: 14px;
 	}
 }
 

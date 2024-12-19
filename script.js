@@ -59,8 +59,8 @@ $(document).ready(function() {
 		edu_btn.addClass("main_nav_btns_clicked");
 		edu_icon.attr('src', 'img/edu_activated.svg');
 		header_area.show();
-		edu_header.fadeIn(200);
-		edu_section.fadeIn(200);
+		edu_header.fadeIn(100);
+		edu_section.fadeIn(100);
 	});
 
 	work_hist_btn.click(function() {
