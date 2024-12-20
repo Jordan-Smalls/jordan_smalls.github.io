@@ -161,8 +161,7 @@ footer {
 #name {
 	color: rgb(255, 60, 60);
 	font-size: 80px;
-	font-family: "Permanent Marker", cursive;
-	font-weight: lighter;
+	font-weight: bold;
 }
 
 #tech_practices {
@@ -171,18 +170,31 @@ footer {
 	flex-direction: column;
 }
 
+.tech_section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
 .blocks {
 	background: linear-gradient(rgb(255, 60, 60), rgb(159, 37, 37));
 	color: white;
-	margin-bottom: 50px;
 	width: 55%;
 	padding: 25px;
 	border-radius: 20px;
 	box-shadow: 0px 5px 7px #999999;
 }
 
-#webdev_block, #extra_block {
+#webdev_block {
 	margin-left: auto;
+}
+
+#more_section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
 }
 
 .block_headers {
@@ -215,7 +227,7 @@ footer {
 }
 
 .sub_headers {
-	font-size: 40px;
+	font-size: 44px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin: 0;
@@ -327,7 +339,7 @@ footer {
 		flex-direction: column;
 		flex-wrap: nowrap;
 		align-items: left;
-		width: 90%;
+		width: 98%;
 	}
 	#portrait {
 		box-shadow: 0px 10px 10px #999999;
@@ -338,16 +350,19 @@ footer {
 		animation: fadeIn .3s ease-out both;
 	}
 	#home_name {
-		font-size: 48px;
-		text-align: center;
-		font-weight: bold;
+		font-size: 28px;
+		text-align: left;
+		font-weight: normal;
 		animation: fadeInBottom .3s ease-out both;
+	}
+	#name {
+		font-size: 50px;
 	}
 	#home_short_desc {
 		font-size: 20px;
-		text-align: center;
-		font-weight: bold;
-		width: 90%;
+		text-align: left;
+		font-weight: normal;
+		width: 86%;
 		margin: auto;
 		animation: fadeInBottom .3s ease-out both;
 	}
@@ -359,12 +374,17 @@ footer {
 		animation: fadeIn .3s ease-out both;
 		animation-delay: .3s;
 	}
-	.blocks {
-		width: 72vw;
+	.tech_section {
+		justify-content: center;
 	}
-
-	#webdev_block, #extra_block {
-		margin-left: auto;
+	.blocks {
+		width: 98%;
+	}
+	#webdev_block {
+		margin: 0;
+	}
+	.tech_imgs {
+		display: none;
 	}
 	.block_headers {
 		text-align: center;
@@ -372,13 +392,11 @@ footer {
 		padding: 0;
 		margin: 0;
 	}
-
 	.course_id {
 		width: 25%;
 		font-size: 14px;
 		font-weight: bold;
 	}
-
 	.course_title {
 		width: 75%;
 		text-align: right;

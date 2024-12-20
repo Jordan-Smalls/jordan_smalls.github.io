@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script> 
-	<script type="text/javascript" src="sections.js"></script> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Permanent+Marker&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
@@ -44,7 +43,7 @@
 
 			<div id="home_section">
 				<img id="portrait" src="img/portrait.jpeg">
-				<h1 id="home_name">Hello! I'm <span id="name">Jordan</span>!</h1>
+				<h1 id="home_name"><span id="name">Jordan Smalls</span></h1>
 				<h2 id="home_short_desc">I'm a programmer and creative with a passion in turning ideas into reality.</h2>
 			</div> 
 
@@ -54,7 +53,7 @@
 
 			<div class="sections" id="edu_section">
 				<h1 class="headers" id="edu_header">Education</h1>
-				<h2 class="sub_headers" id="full_header"><table style="width:100%;"><tr><td>Trident Technical College</td><td style="text-align:right">2022 - 2024</td></tr></table></h2>
+				<h2 class="sub_headers" id="full_header"><table style="width:100%;"><tr><td>Trident Technical College</td><td style="text-align:right; font-weight:lighter;">2022 - 2024</td></tr></table></h2>
 				<h2 class="sub_headers" id="mobile_header"><table style="width:100%;"><tr><td>Trident Technical College</td></tr><tr><td>(2022 - 2024)</td></tr></table></h2>
 
 				<table id="full_view">
@@ -79,39 +78,50 @@
 				</div>
 
 				<div id="tech_practices">
-					<div class="blocks" id="java_block">
-						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
-							<h1 class="block_headers"> Java Programming </h1>
-							<tr>  <td class="course_id">CPT 167:</td>  <td class="course_title">Intro to Programming</td>  </tr>
-							<tr>  <td class="course_id">CPT 187:</td>  <td class="course_title">Object Oriented Programming</td>  </tr>
-							<tr>  <td class="course_id">CPT 237:</td>  <td class="course_title">Advanced Java</td>  </tr>
-						</table>
+					<div class="tech_section">
+						<div class="blocks" id="java_block">
+							<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+								<h1 class="block_headers"> Java Programming </h1>
+								<tr>  <td class="course_id">CPT 167:</td>  <td class="course_title">Intro to Programming</td>  </tr>
+								<tr>  <td class="course_id">CPT 187:</td>  <td class="course_title">Object Oriented Programming</td>  </tr>
+								<tr>  <td class="course_id">CPT 237:</td>  <td class="course_title">Advanced Java</td>  </tr>
+							</table>
+						</div>
+						<img class="tech_imgs" style="width:35%; float:right;" id="java_logo" src="img/java_logo.svg">
 					</div>
-					<div class="blocks" id="webdev_block">
-						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
-							<h1 class="block_headers"> Web Development </h1>
-							<tr>  <td class="course_id">CPT 162:</td>  <td class="course_title">Intro to Webpage Design</td>  </tr>
-							<tr>  <td class="course_id">IST 235:</td>  <td class="course_title">Handheld Computer Programming</td>  </tr>
-							<tr>  <td class="course_id">IST 239:</td>  <td class="course_title">Datum & JavaScript</td>  </tr>
-							<tr>  <td class="course_id">CPT 275:</td>  <td class="course_title">Senior Project</td>  </tr>
-						</table>
+					<div class="tech_section">
+						<img class="tech_imgs" style="width:35%; float:right;" id="java_logo" src="img/webdev_logo.svg">
+						<div class="blocks" id="webdev_block">
+							<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+								<h1 class="block_headers"> Web Development </h1>
+								<tr>  <td class="course_id">CPT 162:</td>  <td class="course_title">Intro to Webpage Design</td>  </tr>
+								<tr>  <td class="course_id">IST 235:</td>  <td class="course_title">Handheld Computer Programming</td>  </tr>
+								<tr>  <td class="course_id">IST 239:</td>  <td class="course_title">Datum & JavaScript</td>  </tr>
+								<tr>  <td class="course_id">CPT 275:</td>  <td class="course_title">Senior Project</td>  </tr>
+							</table>
+						</div>
 					</div>
-					<div class="blocks" id="database_block">
-						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
-							<h1 class="block_headers">Database Management</h1>
-							<tr>  <td class="course_id">CPT 202:</td>  <td class="course_title">SQL Programming</td>  </tr>
-							<tr>  <td class="course_id">CPT 242:</td>  <td class="course_title">Database Fundamentals</td>  </tr>
-							<tr>  <td class="course_id">IST 274:</td>  <td class="course_title">Database Administration</td>  </tr>
-						</table>
+					<div class="tech_section">
+						<div class="blocks" id="database_block">
+							<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+								<h1 class="block_headers">Database Management</h1>
+								<tr>  <td class="course_id">CPT 202:</td>  <td class="course_title">SQL Programming</td>  </tr>
+								<tr>  <td class="course_id">CPT 242:</td>  <td class="course_title">Database Fundamentals</td>  </tr>
+								<tr>  <td class="course_id">IST 274:</td>  <td class="course_title">Database Administration</td>  </tr>
+							</table>
+						</div>
+						<img class="tech_imgs" style="width:38%; float:right;" id="java_logo" src="img/mysql_logo.png">
 					</div>
-					<div class="blocks" id="extra_block">
-						<table style="width:100%; margin-top:15px; margin-bottom:10px;">
-							<h1 class="block_headers">and More!</h1>
-							<tr>  <td class="course_id">IST 190:</td>  <td class="course_title">Linux Essentials</td>  </tr>
-							<tr>  <td class="course_id">IST 166:</td>  <td class="course_title">Network Fundamentals</td>  </tr>
-							<tr>  <td class="course_id">CPT 238:</td>  <td class="course_title">Internet Scripting</td>  </tr>
-							<tr>  <td class="course_id">CPT 209:</td>  <td class="course_title">Computer Systems</td>  </tr>
-						</table>
+					<div id="more_section">
+						<div class="blocks" id="extra_block">
+							<table style="width:100%; margin-top:15px; margin-bottom:10px;">
+								<h1 class="block_headers">and More!</h1>
+								<tr>  <td class="course_id">IST 190:</td>  <td class="course_title">Linux Essentials</td>  </tr>
+								<tr>  <td class="course_id">IST 166:</td>  <td class="course_title">Network Fundamentals</td>  </tr>
+								<tr>  <td class="course_id">CPT 238:</td>  <td class="course_title">Internet Scripting</td>  </tr>
+								<tr>  <td class="course_id">CPT 209:</td>  <td class="course_title">Computer Systems</td>  </tr>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div> 
