@@ -27,7 +27,7 @@ $(document).ready(function() {
 	const proj_section	= $('#proj_section');
 
 	body.hide();
-	body.fadeIn(400);
+	body.show();
 	hideSections();
 	header_area.hide();
 	home_btn.addClass("main_nav_btns_clicked");

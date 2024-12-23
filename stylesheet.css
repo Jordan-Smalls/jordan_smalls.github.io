@@ -29,19 +29,6 @@ header {
 	z-index: 1;
 }
 
-footer {
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-    top: 100%;
-	font-size: 12px;
-	font-weight: normal;
-    height: 6vh;
-    width: 90%;
-}
-
 #main_nav {
 	display: flex;
 	justify-content: center;
@@ -55,7 +42,7 @@ footer {
 	display: flex;	
 	justify-content: center;
 	align-items: center;
-	height: 45px;
+	height: 35px;
 	width: 100%;
 	border: 0;
 }
@@ -66,7 +53,7 @@ footer {
 	display: flex;	
 	justify-content: center;
 	align-items: center;
-	height: 45px;
+	height: 35px;
 	width: 100%;
 	box-shadow: 0px 0px 10px rgb(255, 60, 60);
 	background-color: rgb(255, 60, 60);
@@ -77,10 +64,23 @@ footer {
 @media (hover) {
 	.main_nav_btns:hover {
 		transition: .2s;
-		height: 45px;
+		height: 35px;
 		width: 100%;
 		background-color: #e4e4e4;
 	}
+}
+
+footer {	
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    top: 100%;
+	font-size: 12px;
+	font-weight: normal;
+    height: 4vh;
+	width: 100%;
 }
 
 #home_btn {
@@ -152,14 +152,13 @@ footer {
 
 #home_section {
 	position: absolute;
-	top: 25%;
+	top: 17%;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
-
 
 #tech_practices {
 	margin-top: 30px;
@@ -178,8 +177,8 @@ footer {
 	background: linear-gradient(rgb(255, 60, 60), rgb(159, 37, 37));
 	color: white;
 	width: 55%;
-	padding: 25px;
-	border-radius: 20px;
+	padding: 20px;
+	border-radius: 50px 10px 50px 10px;
 	box-shadow: 0px 5px 7px #999999;
 }
 
@@ -195,9 +194,11 @@ footer {
 }
 
 .block_headers {
-	text-align: center;
+	border-radius: 35px 5px 5px 0px;
+	background-image: linear-gradient(to right, rgba(255,60,60,0), rgb(116, 28, 28));
+	text-align: right;
 	font-size: 36px;
-	padding: 0;
+	padding: 5px 15px 5px 0px;
 	margin: 0;
 }
 
@@ -260,10 +261,10 @@ footer {
 		display: none;
 	}
 	#portrait {
-		margin-bottom: 25px;
+		margin-bottom: 15px;
 		box-shadow: 0px 0px 5px #999999;
-		border-radius: 120px 175px 120px 175px;
-		width: 270px;
+		border-radius: 175px 275px 175px 275px;
+		width: 350px;
 		rotate: 10deg;
 		animation: fadeIn .3s ease-out both;
 		animation-delay: .2s;
@@ -271,7 +272,7 @@ footer {
 	#home_name {
 		margin: 0;
 		text-align: center;
-		font-size: 40px;
+		font-size: 48px;
 		font-weight: bold;
 		animation: fadeIn .3s ease-out both;
 		animation-delay: .3s;
@@ -307,8 +308,7 @@ footer {
 	}
 	#mobile_view {
 		text-align: left;
-		animation: fadeIn .3s ease-out both;
-		animation-delay: .2s;
+		animation: fadeIn .2s ease-out both;
 	}
 	header {
 		position: fixed;
@@ -317,8 +317,18 @@ footer {
 		width: 100%;
 		z-index: 1;
 	}
-	footer {
-		flex-direction: column;
+	#main_nav {
+		border-radius: 0;
+		height: 40px;
+	}
+	.main_nav_btns {
+		height: 40px;
+	}
+	.main_nav_btns_clicked {
+		height: 40px;
+	}
+	#home_btn, #projects_btn {
+		border-radius: 0px;
 	}
 	.socials_btns {
 		margin-right: 5px;
@@ -327,15 +337,21 @@ footer {
 	.headers {
 		border-bottom: 2px solid black;
 		font-size: 60px;
-		animation: fadeIn .3s ease-out both;
+		animation: fadeIn .2s ease-out both;
 	}
 	.sub_headers {
 		padding-bottom: 0;
 		font-size: 36px;
 		text-align: left;
+		animation: fadeIn .2s ease-out both;
 	}
 	#full_header {
 		display: none;
+	}
+	#socials_home {
+		margin-top: 15px;
+		animation: fadeIn .2s ease-out both;
+		animation-delay: 0;
 	}
 	.sections {
 		display: flex;	
@@ -350,17 +366,14 @@ footer {
 		width: 300px;
 		rotate: 10deg;
 		margin-right: 0px;
-		animation: fadeIn .3s ease-out both;
-		animation-delay: .2s;
+		animation: fadeIn .2s ease-out both;
 	}
 	#home_name {
 		font-size: 42px;
 		text-align: center;
 		font-weight: bold;
-		animation: fadeInBottom .3s ease-out both;
 		margin-bottom: 0;
-		animation: fadeIn .3s ease-out both;
-		animation-delay: .3s;
+		animation: fadeIn .2s ease-out both;
 	}
 	#name {
 		font-size: 50px;
@@ -371,16 +384,14 @@ footer {
 		font-weight: normal;
 		width: 86%;
 		margin: auto;
-		animation: fadeIn .3s ease-out both;
-		animation-delay: .4s;
+		animation: fadeIn .2s ease-out both;
 	}
 	#home_section {
 		top: 20%;
 		width: 98vw;
 	}
 	#tech_practices {
-		animation: fadeIn .3s ease-out both;
-		animation-delay: .3s;
+		animation: fadeIn .2s ease-out both;
 	}
 	.tech_section {
 		justify-content: center;
@@ -465,14 +476,5 @@ footer {
    100% {
       opacity: 1;
       transform: translateX(0);
-   }
-}
-
-@keyframes spin {
-   0% {
-      transform: rotate(0deg);
-   }
-   100% {
-      transform: rotate(359deg);
    }
 }
