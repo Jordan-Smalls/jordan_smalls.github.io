@@ -17,7 +17,7 @@ body {
 	flex-direction: column;
     justify-content: space-between;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 97vh;
     width: 100%;
 }
 
@@ -36,7 +36,8 @@ footer {
 	align-items: center;
 	position: relative;
     top: 100%;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: normal;
     height: 6vh;
     width: 90%;
 }
@@ -85,27 +86,28 @@ footer {
 #home_btn {
 	border-radius: 0px 0px 0px 10px;
 	animation: fadeInHigher .3s ease-out both;
+	animation-delay: .1s;
 }
 
 #about_btn {
 	animation: fadeInHigher .3s ease-out both;
-	animation-delay: .1s;
+	animation-delay: .2s;
 }
 
 #edu_btn {
 	animation: fadeInHigher .3s ease-out both;
-	animation-delay: .2s;
+	animation-delay: .3s;
 }
 
 #work_hist_btn {
 	animation: fadeInHigher .3s ease-out both;
-	animation-delay: .3s;
+	animation-delay: .4s;
 }
 
 #projects_btn {
 	border-radius: 0px 0px 10px 0px;
 	animation: fadeInHigher .3s ease-out both;
-	animation-delay: .4s;
+	animation-delay: .5s;
 }
 
 .icons {
@@ -135,37 +137,32 @@ footer {
 	width: 98%;
 }
 
-.socials_btns {
-	border-radius: 100px;
-	height: 40px;
-	width: 40px;	
-	margin-right: 5px;
+#socials_home {
+	margin-top: 15px;
+	animation: fadeIn .3s ease-out both;
+	animation-delay: .5s;
 }
 
-#github_logo {
-	width: 44px;
-	height: 44px;
-	transform: translate(0px, 2px);
+.socials_btns {
+	border-radius: 100px;
+	height: 30px;
+	width: 30px;	
+	margin-right: 6px;
 }
 
 #home_section {
-	margin-top: 110px;
-	margin-bottom: 100px;
+	position: absolute;
+	top: 25%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-#name {
-	color: rgb(255, 60, 60);
-	font-size: 80px;
-	font-weight: bold;
-}
 
 #tech_practices {
-	margin-top: 40px;
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 }
@@ -199,21 +196,21 @@ footer {
 
 .block_headers {
 	text-align: center;
-	font-size: 40px;
+	font-size: 36px;
 	padding: 0;
 	margin: 0;
 }
 
 .course_id {
 	width: 25%;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
 .course_title {
 	width: 75%;
 	text-align: right;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .headers {
@@ -264,18 +261,20 @@ footer {
 	}
 	#portrait {
 		margin-bottom: 25px;
-		box-shadow: 0px 5px 5px #999999;
-		border: 10px groove rgb(255, 60, 60);
-		border-radius: 300px;
-		width: 60%;
+		box-shadow: 0px 0px 5px #999999;
+		border-radius: 120px 175px 120px 175px;
+		width: 270px;
 		rotate: 10deg;
+		animation: fadeIn .3s ease-out both;
+		animation-delay: .2s;
 	}
 	#home_name {
 		margin: 0;
 		text-align: center;
-		font-size: 80px;
+		font-size: 40px;
 		font-weight: bold;
 		animation: fadeIn .3s ease-out both;
+		animation-delay: .3s;
 	}
 	#home_short_desc {
 		margin: 0;
@@ -283,10 +282,14 @@ footer {
 		text-align: center;
 		font-weight: normal;
 		animation: fadeIn .3s ease-out both;
+		animation-delay: .4s;
 	}
 	#home_section {
 		transform: translate(0px, 0%);
 		width: 50%;
+	}
+	#socials {
+		display: none;
 	}
 	.sections {
 		animation: fadeIn .3s ease-out both;
@@ -342,32 +345,37 @@ footer {
 		width: 98%;
 	}
 	#portrait {
-		box-shadow: 0px 10px 10px #999999;
-		border-radius: 200px;
-		width: 80%;
-		margin-right: 0px;
+		box-shadow: 0px 0px 5px #999999;
+		border-radius: 120px 175px 120px 175px;
+		width: 300px;
 		rotate: 10deg;
+		margin-right: 0px;
 		animation: fadeIn .3s ease-out both;
+		animation-delay: .2s;
 	}
 	#home_name {
-		font-size: 28px;
-		text-align: left;
-		font-weight: normal;
+		font-size: 42px;
+		text-align: center;
+		font-weight: bold;
 		animation: fadeInBottom .3s ease-out both;
+		margin-bottom: 0;
+		animation: fadeIn .3s ease-out both;
+		animation-delay: .3s;
 	}
 	#name {
 		font-size: 50px;
 	}
 	#home_short_desc {
-		font-size: 20px;
-		text-align: left;
+		font-size: 26px;
+		text-align: center;
 		font-weight: normal;
 		width: 86%;
 		margin: auto;
-		animation: fadeInBottom .3s ease-out both;
+		animation: fadeIn .3s ease-out both;
+		animation-delay: .4s;
 	}
 	#home_section {
-		margin-top: 18vh;
+		top: 20%;
 		width: 98vw;
 	}
 	#tech_practices {
@@ -376,6 +384,7 @@ footer {
 	}
 	.tech_section {
 		justify-content: center;
+		margin-bottom: 20px;
 	}
 	.blocks {
 		width: 98%;
