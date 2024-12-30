@@ -248,6 +248,10 @@ footer {
 	font-size: 24px;
 }
 
+.project_imgs {
+	width: 50%;
+}
+
 @media screen and (min-width: 501px) {
 	#full_view {
 		padding: 0;
