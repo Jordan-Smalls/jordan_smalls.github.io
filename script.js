@@ -26,6 +26,13 @@ $(document).ready(function() {
 	const work_section 	= $('#work_section');
 	const proj_section	= $('#proj_section');
 
+	const scheduling_header 	= $('#scheduling_header');
+	const scheduling_arrow 		= $('#scheduling_arrow_icon');
+	const scheduling_section 	= $('#scheduling_section');
+	const unity_header 			= $('#unity_header');
+	const unity_arrow 			= $('#unity_arrow_icon');
+	const unity_section 		= $('#unity_section');
+
 	body.hide();
 	body.show();
 	hideSections();
@@ -81,6 +88,38 @@ $(document).ready(function() {
 		header_area.show();
 		proj_header.fadeIn(200);
 		proj_section.fadeIn(200);
+	});
+
+	scheduling_header.click(function() {
+		if (scheduling_section.css('height') == '0px') {
+			scheduling_header.addClass("project_header_clicked");
+			scheduling_arrow.attr('src', 'img/uparrow.svg');
+			scheduling_section.animate({height:'600px'});
+			$('html,body').animate({
+				scrollTop: scheduling_header.offset().top - 45},
+				'slow');
+		}
+		else {
+			scheduling_section.animate({height:'0px'}, 'fast');
+			scheduling_header.removeClass("project_header_clicked");
+			scheduling_arrow.attr('src', 'img/downarrow.svg');
+		}
+	});
+
+	unity_header.click(function() {
+		if (unity_section.css('height') == '0px') {
+			unity_header.addClass("project_header_clicked");
+			unity_arrow.attr('src', 'img/uparrow.svg');
+			unity_section.animate({height:'600px'});
+			$('html,body').animate({
+				scrollTop: unity_header.offset().top - 45},
+				'slow');
+		}
+		else {
+			unity_section.animate({height:'0px'}, 'fast');
+			unity_header.removeClass("project_header_clicked");
+			unity_arrow.attr('src', 'img/downarrow.svg');
+		}
 	});
 
 	function clearButtons() {
